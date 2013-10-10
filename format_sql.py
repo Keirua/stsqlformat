@@ -1,6 +1,6 @@
 import sublime
 import sublime_plugin
-import sqlparse
+from .sqlparse import format
 
 class FormatSqlCommand(sublime_plugin.TextCommand):  
     def run(self, edit):
